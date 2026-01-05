@@ -14,7 +14,7 @@ client = OpenAI()
 app = Flask(__name__)
 CORS(app, origins=["https://smart-career-coach-frontend.vercel.app"])
 
-# ✅ Resume Generation Route
+# ✅ Resume Generation Route at its finest 
 @app.route('/api/generate-resume', methods=['POST'])
 def generate_resume():
     data = request.get_json()
