@@ -71,6 +71,7 @@ Respond in JSON format like this:
         return jsonify({"error": str(e)}), 500
 
 @app.route('/api/mock-interview', methods=['POST'])
+#Nothing just testing for a different project
 def mock_interview():
     data = request.get_json()
     job_title = data.get('job_title', 'Software Developer')
