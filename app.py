@@ -39,7 +39,7 @@ Highlight their skills in {skills}, and experience: {experience}."""
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# ✅ Job Description Analyzer Route
+
 @app.route('/api/analyze-jd', methods=['POST'])
 def analyze_job_description():
     data = request.get_json()
